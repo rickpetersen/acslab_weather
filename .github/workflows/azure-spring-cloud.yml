@@ -24,4 +24,4 @@ jobs:
     - name: ls #2
       run: ls ./target      
     - name: Deploy to Azure Spring Cloud
-      run: az spring-cloud app deploy --resource-group ASC-workshop --service azure-spring-cloud-lab-dape --name weather-service --jar-path target/demo-0.0.1-SNAPSHOT.jarSS
+      run: az spring-cloud app deploy --resource-group ASC-workshop --service azure-spring-cloud-lab-dape --name weather-service --jar-path target/demo-0.0.1-SNAPSHOT.jar
