@@ -19,5 +19,9 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Install Azure Spring Cloud extension
       run: az extension add -y --name spring-cloud
+    - name: ls #1
+      run: ls
+    - name: ls #2
+      run: ls ./target      
     - name: Deploy to Azure Spring Cloud
       run: az spring-cloud app deploy --resource-group ASC-workshop --service azure-spring-cloud-lab-dape --name weather-service --jar-path target/demo-0.0.1-SNAPSHOT.jarSS
